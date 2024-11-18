@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUKU KITA</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <nav class="bg-secondary fixed top-0 w-full z-100">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-primary hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0 5"></span>
+              <span class="sr-only">Open main menu</span>
+
+              <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.65h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex shrink-0 items-center">
+              <img src="public/img/logo.png" class="h-8 w-auto" alt="">
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-hitam hover:bg-primary hover:text-white">Dashboard</a>
+                <a href="#about" class="rounded-md px-3 py-2 text-sm font-medium text-hitam hover:bg-primary hover:text-white">About</a>
+                <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-hitam hover:bg-primary hover:text-white">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+    
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div>
+                <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                  <span class="absolute -inset-1.5"></span>
+                  <span class="sr-only">Open user menu</span>
+                  <img class="size-8 rounded-full" src="public/img/juanda.png" alt="">
+                </button>
+              </div>
+    
+              <!--
+                Dropdown menu, show/hide based on menu state.
+    
+                Entering: "transition ease-out duration-100"
+                  From: "transform opacity-0 scale-95"
+                  To: "transform opacity-100 scale-100"
+                Leaving: "transition ease-in duration-75"
+                  From: "transform opacity-100 scale-100"
+                  To: "transform opacity-0 scale-95"
+              -->
+              <div class="hidden absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                <!-- Active: "bg-gray-100 outline-none", Not Active: "" -->
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-hitam hover:bg-primary hover:text-white" aria-current="page">Dashboard</a>
+          <a href="#about" class="block rounded-md px-3 py-2 text-base font-medium text-hitam hover:bg-primary hover:text-white">About</a>
+          <a href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-hitam hover:bg-primary hover:text-white">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="flex flex-col-reverse sm:flex-row sm:justify-between lg:min-h-screen bg-primary px-8 sm:px-16 mt-16 py-4 max-w-full mx-auto lg:mt-0">
+    <!-- left side -->
+      <div class="sm:w-3/5 lg:mt-52">
+        <p class="font-semibold text-slate-100">Selamat Datang</p>
+        <h2 class="text-4xl lg:text-5xl xl:text-6xl	font-bold text-sky-300 mt-0">PERPUS KITA</h2>
+        <p class="max-w-md text-slate-100 mt-4">
+          Belajar dan terus belajar, perluas wawasan dengan membaca buku karena ilmu tidak berat untuk dibawa kemana mana.
+        </p>
+        <p class="font-bold text-sky-400 mt-3">Open for Work & Collaboration.</p>
+        <div class="mt-9 mb-10">
+          <a href="#skills" class="lg:max-w-md px-6 py-3 text-slate-100 border-2 border-slate-100 font-bold transition-all hover:bg-slate-100 hover:bg-opacity-20 rounded-full text-center block lg:inline_block">Login</a>
+        </div>
+      </div>
+
+      <!-- right side -->
+      <div class="m:block sm:w-2/5 lg:mt-12">
+        <img src="/public/img/mockup.png" alt="hero-img" class="max-w-full">
+      </div>
+    </section>
+
+    <!-- About -->
+     <section id="about" class="bg-secondary px-8 sm:px-16 py-4 lg:mt-0">
+      <div class="flex flex-wrap w-full items-center justify-center text-center">
+        <!-- <p class="w-full font-semibold text-hitam mt-3 lg:mt-10">Selamat Datang</p> -->
+        <h2 class="w-full text-2xl lg:text-4xl font-bold text-primary mt-3 lg:mt-8">TENTANG PERPUS KITA</h2>
+        
+        <p class="text-hitam mt-4 w-3/4 lg:w-1/2">
+          PERPUS KITA adalah layanan perpustakaan digital. Kami hadir untuk memudahkan pengelola perpusakaan, dan memudahkan orang orang untuk membaca buku.
+        </p>
+      </div>
+      <div class="flex flex-wrap lg:w-full items-center justify-center mb-10">
+        <h2 class="text-md font-bold text-primary lg:text-xl mt-5 lg:mt-10 lg:w-1/2 text-center">Kelebihan PERPUS KITA</h2>
+        <div class="mx-auto rounded-md px-4 lg:px-8 py-2 lg:py-6">
+          <div class="flex flex-wrap items-center justify-center">
+            <div class="flex flex-col w-full lg:w-1/5 px-2 py-2 lg:px-3 mx-2 mt-4 rounded-md bg-white text-primary drop-shadow-xl">
+              <img src="public/img/check.svg" class="scale-50" alt="">
+              <span class="font-bold text-center">Mudah di akses dimanapun</span>
+            </div>
+            <div class="flex flex-col w-full lg:w-1/5 px-2 py-2 lg:px-3 mx-2 mt-4 rounded-md bg-white text-primary drop-shadow-xl">
+              <img src="public/img/free.svg" class="scale-50" alt="">
+              <span class="font-bold text-center">Akses Gratis ke semua buku</span>
+            </div>
+            <div class="flex flex-col w-full lg:w-1/5 px-2 py-2 lg:px-3 mx-2 mt-4 rounded-md bg-white text-primary drop-shadow-xl">
+              <img src="public/img/android.svg" class="scale-50" alt="">
+              <span class="font-bold text-center">Tersedia di perangkat Android</span>
+            </div>
+            <div class="flex flex-col w-full lg:w-1/5 px-2 py-2 lg:px-3 mx-2 mt-4 rounded-md bg-white text-primary drop-shadow-xl">
+              <img src="public/img/secure.svg" class="scale-50" alt="">
+              <span class="font-bold text-center">Aman, Praktis dan Efisien</span>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <section id="contact" class="bg-primary px-8 py-4">
+      <div class="flex flex-wrap w-full mx-auto items-center justify-center text-center mb-10">
+        <h1 class="w-full font-bold text-2xl lg:text-4xl text-white mt-5">KONTAK KAMI</h1>
+        <p class="w-full text-white mt-7">Anda dapat menghubungi kami untuk informasi lebih lanjut mengenai PERPUS KITA</p>
+        <span class="flex items-center justify-center text-white font-semibold mt-5 mx-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 128 96" id="email">
+            <g id="Layer_2">
+              <path fill="white" id="Icons" d="M0 11.283V8a8 8 0 0 1 8-8h112a8 8 0 0 1 8 8v3.283l-64 40zm66.12 48.11a4.004 4.004 0 0 1-4.24 0L0 20.717V88a8 8 0 0 0 8 8h112a8 8 0 0 0 8-8V20.717z"></path>
+            </g>
+          </svg>
+          &nbsp;
+          perpuskita@gmail.com
+        </span>
+        <span class="flex items-center justify-center text-white font-semibold mt-5 mx-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="phone">
+            <path fill="#fff" fill-rule="evenodd" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm3.232-8.639 1.544 1.548c.307.309.297.82-.02 1.14l-.442.432-.01-.009a2.606 2.606 0 0 1-1.274.52c-.1.011-2.435.23-5.333-2.674-2.097-2.101-2.87-3.65-2.665-5.344.023-.212.075-.422.16-.643.09-.232.212-.448.358-.634l-.012-.012.435-.439c.319-.32.829-.329 1.135-.021l1.545 1.548c.307.308.298.818-.02 1.138l-.258.257-.522.523a10.386 10.386 0 0 1 .084.15l.001.003c.273.493.647 1.167 1.355 1.876.708.71 1.38 1.084 1.872 1.357l.153.086.778-.78c.319-.32.828-.329 1.136-.021Z" clip-rule="evenodd"></path>
+          </svg>
+          &nbsp;
+          0821 000 00001
+        </span>
+      </div>
+     </section>
+     <div class="w-full bg-cyan-950 mx-auto text-center text-white">
+       <p class="text-base py-5">Copyright by Muhamad Juanda</p>
+     </div>
+
+
+    <script src="dist/js/script.js"></script>
+</body>
+</html>
